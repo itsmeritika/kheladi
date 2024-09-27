@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kheladi</title>
+    <link rel="icon" href="https://kheladi.com/assets/images/favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <style>
+        .card-header {
+            background-color: #084da2;
+            color: white;
+        }
+
+        .fixed-height {
+            height: 300px;
+            overflow: auto;
+        }
+
+        .overlay-title {
+            bottom: 15px;
+            left: 20px;
+            display: block;
+            background-color: black;
+        }
+
+        .figure img:hover {
+            transform: scale(1.05);
+        }
+
+        .figure {
+            overflow: hidden;
+        }
+
+        .figure img {
+            transition: 0.55s ease-in-out;
+        }
+
+        .category {
+            background-color: crimson;
+            padding: 5px 10px;
+        }
+
+        .blue-bg {
+            background-color: #084da2;
+            color: white;
+        }
+
+        .bg-text {
+            background: none;
+            color: white;
+        }
+
+        ul.blue-hover li:hover {
+            background-color: #084da2;
+            color: white;
+        }
+
+        .ritika:hover {
+            color: red;
+
+        }
+        .kheladi-title {
+     width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: #000000ff;
+    color: white;
+        }
+
+
+
+        .spons {
+            border: 1px solid #ddd;
+        }
+
+        .nav-link.active {
+            background-color: #084da2 !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://kheladi.com/assets/images/logo.png" alt="logo">
+                <p class="text-center">आश्विन २, २०८१ बुधबार</p>
+            </div>
+            <div class="col-md-8">
+                ads
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color:#084da2;">
+        <div class="container">
+            <ul class="mb-0 list-unstyled text-white d-flex">
+                <li class="p-4">home</li>
+                <li class="p-4">gallery</li>
+                <li class="p-4">services</li>
+                <li class="p-4">contact</li>
+                <li class="p-4">personal info</li>
+                <li class="p-4">social media</li>
+                <li class="p-4">other</li>
+
+                <li class="p-4 float-end">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <div style="background-color: red;">
+        <div class="container text-center text-white">
+            <marquee>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+                <a class="p-2 text-decoration-none text-white">this is new title</a>
+            </marquee>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <img spons src="https://kheladi.com/uploads/kokoku/1706440795.gif" alt="">
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-8">
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="figure position-relative">
+                            <img src="http://kheladi.com/uploads/media/2024/09/19//172670964966eb7f914bda58_20368057.jpg"
+                                alt="picture" class="w-100">
+                            <a class="text-decoration-none text-white position-absolute overlay-title fw-bold fs-4">पहिलो
+                                खेलमै रोकियो सिटी</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="newslist fixed-height">
+                            <div class="single-news">
+                                <span class="category text-white ">football</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">cricket</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">basketball</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">ludo</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">skatting</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">jumping</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">oleleel</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">emmm</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="single-news">
+                                <span class="category text-white ">oloelelle</span>
+                                <div class="mt-2">
+                                    <a class="text-decoration-none text-dark fw-bold" href="">this is a title</a>
+                                </div>
+                                <hr>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Featured
+                    </div>
+                    <ul class="list-group list-group-flush fixed-height">
+                        <li class="list-group-item">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item">पहिलो खेलमै रोकियो सिटी</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-2">
+            <img class="spons" src="https://kheladi.com/uploads/kokoku/1707446655.gif" alt="adss">
+
+        </div>
+    </div>
+    <div class="container-fluid  blue-bg mt-3 py-4 my-3">
+        <div class="container">
+            <div class="fs-2 mb-3">शनिबारको दिन</div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mb-3">आश्विन ५, २०८१</div>
+
+                    <div class="figure ">
+                        <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                            alt="" class="w-100">
+                    </div>
+                    <ul class="list-group list-group-flush fixed-height ">
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">आश्विन ५, २०८१</div>
+                    <div class="figure ">
+                        <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                            alt="" class="w-100">
+                    </div>
+                    <ul class="list-group list-group-flush fixed-height ">
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">आश्विन ५, २०८१</div>
+                    <div class="figure ">
+                        <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                            alt="" class="w-100">
+                    </div>
+                    <ul class="list-group list-group-flush fixed-height ">
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="mb-3">आश्विन ५, २०८१</div>
+                    <div class="figure ">
+                        <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                            alt="" class="w-100">
+                    </div>
+                    <ul class="list-group list-group-flush fixed-height ">
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                        <li class="list-group-item bg-text">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                        <li class="list-group-item bg-text">भाग्यमानी पिएसजी</li>
+                        <li class="list-group-item bg-text">पहिलो खेलमै रोकियो सिटी</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 ">
+                <div class="card">
+                    <div class="card-header">
+                        Video
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-md-8 pe-0" style="height: 300px;">
+                                <iframe width="100%" height="300" src="https://www.youtube.com/embed/puqorvBs6Jg"
+                                    title="CAVA Women&#39;s Volleyball Club Championship 2024 WINNER  Nepal Police Club  स्वदेश फर्कियो"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <ul class="list-group list-group-flush fixed-height blue-hover">
+                                    <li class="list-group-item bg-none ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                                    <li class="list-group-item bg-none ">भाग्यमानी पिएसजी</li>
+                                    <li class="list-group-item bg-none ">पहिलो खेलमै रोकियो सिटी</li>
+                                    <li class="list-group-item bg-none ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                                    <li class="list-group-item bg-none ">भाग्यमानी पिएसजी</li>
+                                    <li class="list-group-item bg-none ">पहिलो खेलमै रोकियो सिटी</li>
+                                    <li class="list-group-item bg-none ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                                    <li class="list-group-item bg-none ">भाग्यमानी पिएसजी</li>
+                                    <li class="list-group-item bg-none ">पहिलो खेलमै रोकियो सिटी</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <img class="spons w-100" src="https://kheladi.com/uploads/kokoku/1702098686.gif" alt="">
+                </div>
+
+                <div class="row">
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="mt-3">
+                    <img spons class="w-100" src="https://kheladi.com/uploads/kokoku/rugby.gif" alt="">
+                </div>
+                <div class="row">
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="  mt-2">
+                        <img class=" spons w-100" src="https://kheladi.com/sponsored/bajaj-pulsar-awards.gif" alt="">
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+                    <div class="  col-md-4">
+                        <div class="blue-bg mt-3 py-2 px-4  mb-1"> football</div>
+                        <div class="figure ">
+                            <img src="http://kheladi.com/uploads/media/2024/09/20//172682315766ed3af52b72b9_95407041.jpg"
+                                alt="" class="w-100">
+                        </div>
+                        <ul class="list-group list-group-flush fixed-height  ">
+
+
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                            <li class="list-group-item ">अमेरिकालाई हराउँदै उत्तर कोरिया फाइनलमा</li>
+                            <li class="list-group-item ">भाग्यमानी पिएसजी</li>
+                            <li class="list-group-item ">पहिलो खेलमै रोकियो सिटी</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3 ">
+                <div style=" position: sticky; top:2rem; border: 1px solid #ddd;"><!-- ya position baki xa sticky-->
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist" style="border-bottom: none;">
+                            <button class="nav-link active  " id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true" style="border: 1px solid #ddd; ">Home</button>
+                            <button class="nav-link   " id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false" style="border: 1px solid #ddd; ">Profile</button>
+                            <button class="nav-link  " id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Contact</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <ul class="list-group list-group-flush p-2">
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <ul class="list-group list-group-flush p-2 red-hover">
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                            tabindex="0">
+                            <ul class="list-group list-group-flush p-2  ">
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item ">
+                                    <div class="row">
+                                        <div class="col-md-4 figure">
+                                            <img src="http://kheladi.com/uploads/media/2024/09/09//172588906566defa2915f854_26348749.jpg"
+                                                alt="" style="width: 100px;">
+                                        </div>
+                                        <div class="col-md-8 ritika">
+                                            अमरिकालाई हराउँदै उत्तर कोरिया फाइनलमा
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                
+                <div class="blue-bg mt-3 py-2 px-4 mb-1 "> football </div>
+                <div class="figure position-relative" style="height: 400px;">
+                    <img style="height: 100%;object-fit: cover;" class="w-100" src="http://kheladi.com/uploads/media/2024/09/04//172541390166d7ba0d4d91e4_60747720.jpg" alt=""> <!-- ya problem aayeko xa hai width ma-->
+                    <div class="kheladi-title">
+                    
+                        <a >पहिलो
+                            खेलमै रोकियो सिटी</a>
+                    </div>
+                
+                </div>
+                <div>
+                    <img class="w-100 mt-5" src="https://kheladi.com/uploads/kokoku/1702098629.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+    
+
+
+    </div>
+    <div class="container-fluid  blue-bg mt-3 py-4 my-3">
+        <div class="container">
+            <div style="color: white; padding: 30px; font-family: Arial, sans-serif;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
+                  
+                  <!-- Contact Information -->
+                  <div style="flex: 1;">
+                    <h3 style="border-bottom: 1px solid white; padding-bottom: 10px;">सम्पर्क</h3>
+                    <p style="margin: 10px 0;"><strong>ठेगाना:</strong> Kageshwori Manohara-6, Kathmandu</p>
+                    <p style="margin: 10px 0;"><strong>टेलिफोन:</strong> 014153721</p>
+                    <p style="margin: 10px 0;"><strong>फोन नं:</strong> 9851040001</p>
+                    <p style="margin: 10px 0;"><strong>इमेल:</strong> kheladinepal@gmail.com</p>
+                  </div>
+                  
+                  <!-- Big Sports Pvt. Ltd Information -->
+                  <div style="flex: 1;">
+                    <h3 style="border-bottom: 1px solid white; padding-bottom: 10px;">BIG SPORTS PVT. LTD द्वारा संचालित</h3>
+                    <p style="margin: 10px 0;"><strong>प्रवन्ध सम्पादक:</strong> अजय फुयाल</p>
+                    <p style="margin: 10px 0;"><strong>सम्पादक:</strong> राजकुमार थापा</p>
+                    <p style="margin: 10px 0;"><strong>विशेषांक:</strong></p>
+                    <p style="margin: 10px 0;"><strong>हाम्रो टिम:</strong></p>
+                  </div>
+                  
+                  <!-- Social Media Follow Us Section -->
+                  <div style="flex: 1;">
+                    <h3 style="border-bottom: 1px solid white; padding-bottom: 10px;">FOLLOW US</h3>
+                    <div style="display: flex; gap: 10px; margin: 20px 0;">
+                      <a href="#"><img src="https://www.facebook.com/kheladidotcom" alt="Facebook" width="32"></a>
+                      <a href="#"><img src="twitter-icon.png" alt="Twitter" width="32"></a>
+                      <a href="#"><img src="youtube-icon.png" alt="YouTube" width="32"></a>
+                      <a href="#"><img src="instagram-icon.png" alt="Instagram" width="32"></a>
+                      <a href="#"><img src="tiktok-icon.png" alt="TikTok" width="32"></a>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Footer -->
+                <div style="text-align: right; margin-top: 30px; border-top: 1px solid white; padding-top: 10px;">
+                  <p>Developed by DigitalBuzz © 2024. All rights reserved.</p>
+                </div>
+              </div>
+              
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
